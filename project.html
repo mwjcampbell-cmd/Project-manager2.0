@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Details</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><button onclick="window.location.href='index.html'">← Back</button><h1 id="projectTitle">Project</h1></header>
+
+<section>
+<h2>Tasks</h2>
+<input type="text" id="taskInput" placeholder="New Task">
+<button onclick="addTask()">Add Task</button>
+<ul id="taskList"></ul>
+</section>
+
+<section>
+<h2>Costs</h2>
+<input type="text" id="costDesc" placeholder="Description">
+<input type="number" id="costAmount" placeholder="Amount">
+<button onclick="addCost()">Add Cost</button>
+<ul id="costList"></ul>
+<p><b>Total:</b> $<span id="totalCost">0</span></p>
+</section>
+
+<section>
+<h2>Notes</h2>
+<textarea id="notesInput" placeholder="Site notes..."></textarea>
+</section>
+
+<section>
+<h2>Photos</h2>
+<input type="text" id="photoFile" placeholder="Photo filename (from /photos/)">
+<button onclick="addPhoto()">Add Photo</button>
+<div id="photoGallery"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
